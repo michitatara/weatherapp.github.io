@@ -21,9 +21,10 @@ span{
     display:grid;
     grid-template-rows: 20% 80%;
     text-align: center;
+    padding:25px 5px;
 }
 
-.degree{
+.degrees{
     display:grid;
     grid-template-columns: auto auto;
     justify-content: center;
