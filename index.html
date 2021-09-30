@@ -1,18 +1,173 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
-<meta charset="UTF-8">
-<body>
-<div class="container">
-    <h2 id="city">New York City</h2>
-    <div class="middle">
-        <img src=""alt="icon" id="icon">
-        <div class="degrees">
-            <h1 id="temp">19</h1>
-            <span>
-                &#176;
-            </span>
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Michelle Tatara,Queens College Student + Aspiring Full Stack Engineer</title>
+    <link href="https://fonts.googleapis.com/css?family=Caveat|Montserrat:400,600&display=swap" rel="stylesheet"> 
+    <link rel="stylesheet" href="styleresume.css">
+    <script>
+      function openmypg(evt, cityName) {
+        // Declare all variables
+        var i, tabcontent, tablinks;
+
+        // Get all elements with class="tabcontent" and hide them
+        tabcontent = document.getElementsByClassName("tabcontent");
+        for (i = 0; i < tabcontent.length; i++) {
+          tabcontent[i].style.display = "none";
+        }
+
+        // Get all elements with class="tablinks" and remove the class "active"
+        tablinks = document.getElementsByClassName("tablinks");
+        for (i = 0; i < tablinks.length; i++) {
+          tablinks[i].className = tablinks[i].className.replace(" active", "");
+        }
+
+        // Show the current tab, and add an "active" class to the button that opened the tab
+        document.getElementById(cityName).style.display = "block";
+        evt.currentTarget.className += " active";
+        document.getElementById("tablinks").onclick();
+      }
+    </script>
+  </head>
+  <body>
+    <main>
+      <!-- ***************  ABOUT / PROFILE  **************** -->
+      <header>
+        <div class="content-wrap">
+          <h1>Michelle Tatara</h1>
+          <h2>Queens College Student + Aspiring Full Stack Engineer</h2>
+
+          <p>I am a current senior at Queens College, and I am focusing in on my last year of my studies at school. When
+            I graduate, I am planning to work at Credit Suisse as a Technical Analyst.
+            <a href="https://michitatara.github.io/" target="_blank">My Personal Website</a></p>
         </div>
-        <h3 id="desc">Sunny</h3>
-    </div>
-</div>
-</body>
+        <!-- Tab links https://www.w3schools.com/howto/howto_js_tabs.asp -->
+        <div class="tab">
+          <button class="tablinks" onclick="openmypg(event, 'My Resume')">My Resume</button>
+          <button class="tablinks" onclick="openmypg(event, 'Weather App')">Weather App</button>
+        </div>
+
+        <!-- Tab content -->
+        <div id="My Resume" class="tabcontent">
+          <a href="https://michitatara.github.io/" onclick="myresume"></a></p>
+        </div>
+
+        <div id="Weather App" class="tabcontent">
+          <h3>Concerning Weather App...</h3>
+          <p>Dev work in progress!</p>
+        </div>
+      </header>
+
+      <!-- ************ PROJECTS / PORTFOLIO  ************** -->
+      <section class="projects">
+        <div class="content-wrap divider">
+          <h2>Featured Projects</h2>
+          <p>View selected projects below.Section in progress. More information can be found at <a href="https://michitatara.github.io/">My Personal Website</a>.</p>
+
+          <!-- Project 1 -->
+          <section>
+            <section class="project-item">
+              <img src="https://sm.pcmag.com/t/pcmag_uk/review/l/linkedin-l/linkedin-learning_puzv.1920.jpg" alt="Lynda & LinkedIn Learning course picture">
+            <h3>Lynda / LinkedIn Learning Courses</h3>
+            <p>I attended Linkedin Learning courses as part of my course. Some examples: </p>
+            <a class="btn" href="https://www.linkedin.com/learning/css-essential-training-3" target="_blank">CSS Essential Training</a>
+            <a class="btn" href="https://www.linkedin.com/learning/html-essential-training-4">HTML Essential Training</a>
+          </section>
+
+          <!-- Project 2 -->
+          <section>
+            <section class="project-item">
+              <img src="https://media.idownloadblog.com/wp-content/uploads/2014/04/iOS-7-Weather-app-top-main-view.gif" alt="Projected Weather App">
+            <h3>Weather App in progress</h3>
+            <p>I am building a Weather App right now as part of class assignment. I am following a youtube tutorial to do it.</p>
+            <a class="btn" href="https://michitatara.github.io/" target="_blank">Check out the skeleton of the page.</a>
+          </section>
+
+
+      <!-- ****************  WORK EXPERIENCE  ******************** -->
+      <section class="work-experience">
+        <div class="content-wrap item-details divider">
+          <h2>Work Experience</h2>
+          <p>See my complete work history on <a href="https://www.linkedin.com/in/michelle-huang-tatara/">LinkedIn</a>.</p>
+
+          <!-- Job 1 -->
+          <section class="job-item">
+            <div class="job-details">
+            <h3>Summer Technical Analyst/ Software Engineering Intern</h3>
+            <p>Credit Suisse</p>
+            <p>June 2021-August 2021</p>
+            </div>
+            <div class="job-summary">
+            <p>Key Contributions:</p>
+            <ul>
+              <li>Worked on the Data Analysis team. Worked on improving the semantic search engine using Machine Learning.
+              My team used python,java, and react for it.<li>
+              <li>Worked on the financial services. Helped develop save functionality for their internal trader website. Coded
+              a save function with java to save user preferences</li>
+              <li>Completed API queries using MYSQL and Impala to return </li>
+              <li><a href="https://www.credit-suisse.com/us/en.html">Credit Suisse Website</a></li>
+            </ul>
+            </div>
+          </section>
+
+          <!-- Job 2 -->
+          <section class="job-item">
+            <div class="job-details">
+            <h3>Software Engineering Intern</h3>
+            <p>Bloomberg L.P</p>
+            <p>January 2020</p>
+            </div>
+            <div class="job-summary">
+            <p>Key contributions:</p>
+            <ul>
+              <li>Engineered the front end for a Discussion Board using REACT/JSON/JS for Bloomberg’s
+                Business Intelligence Team</li>
+              <li>Received instruction on usage of the Bloomberg Terminal, a UNIX based terminal &
+                Bash shell</li>
+              <li>Ensured that the design adhered to company standards and applied Bloomberg technology
+                methods for UI & design.</li>
+              <li><a href="https://www.bloomberg.com/company/">Bloomberg L.P Website</a></li>
+            </ul>
+            </div>
+          </section>
+        </div>
+      </section>
+
+      <!-- *************  EDUCATION & CERTIFICATIONS *********** -->
+      <section class="education">
+        <div class="content-wrap">
+          <h2>Education</h2>
+
+          <section>
+            <h3>Queens College,CUNY - New York City, US</h3>
+            <p>Bachelor of Arts in Computer Science, Anticipated Completion: May 2022</p>
+            <p>8 semester long full-time program covering theory and application of algorithms, databases,
+              and datastructures.Taught C++,Java, and more</p>
+          </section>
+
+          <section>
+            <h3>High School of American Studies - Bronx,NY</h3>
+            <p>Regents High School Diploma, 2015-2018</p>
+            <p>NYC Specialised High School with concentrations in US & Global History</p>
+          </section>
+        </div>
+      </section>
+
+      <!-- ************  CONTACT INFO / SOCIAL MEDIA  ************ -->
+      <footer>
+        <div class="content-wrap">
+          <h2>Let's Keep in Touch!</h2>
+
+          <!-- Social media and contact links. Add or remove any networks. -->
+          <ul class="contact-list">
+            <li><a href="mailto:email@example.com">michelletatara@gmail.com</a></li>
+            <li><a href="https://michitatara.github.io/" target="_blank">Check out my github here!</a></li>
+            <!--<li><a href="http://twitter.com/christinatruong" target="_blank">Twitter</a></li>-->
+            <li><a href="https://www.linkedin.com/in/michelle-huang-tatara/" target="_blank">LinkedIn</a></li>
+          </ul>
+        </div>
+      </footer>
+    </main>
+  </body>
+</html>
